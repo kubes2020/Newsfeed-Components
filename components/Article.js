@@ -108,6 +108,7 @@ function articleMaker(article){
   p1.textContent = article.firstParagraph;
   p2.textContent = article.secondParagraph;
   p3.textContent = article.thirdParagraph;
+  expand.textContent = 'toggle'
 
   /*  structure   */
   headDiv.append(title)
@@ -125,7 +126,7 @@ function articleMaker(article){
   /*  add listener and toggle 'article-open'   */
   // const expButton = document.querySelector('.expandButton')
   expand.addEventListener('click', () => {
-    article.classList.toggle('article-open')
+    headDiv.classList.toggle('article-open')
   })
 
 
