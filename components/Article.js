@@ -142,7 +142,6 @@ function articleMaker(article){
 const articles = document.querySelector('.articles')
 
 data.forEach(artContent => {
-  debugger
   const divArt = articleMaker(artContent)
   articles.append(divArt)
 })
