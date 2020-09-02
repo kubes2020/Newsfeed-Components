@@ -86,6 +86,13 @@ const data = [
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
+  },
+  {
+    title: 'My Super Duper Title',
+    date: 'August 2nd, 2020',
+    firstParagraph: `this is all I got!`,
+    secondParagraph: `some more of this`,
+    thirdParagraph:  `and last one`,
   }
 ];
 
@@ -108,7 +115,7 @@ function articleMaker(article){
   p1.textContent = article.firstParagraph;
   p2.textContent = article.secondParagraph;
   p3.textContent = article.thirdParagraph;
-  expand.textContent = 'toggle'
+  expand.textContent = 'Expand for Article'
 
   /*  structure   */
   headDiv.append(title)
